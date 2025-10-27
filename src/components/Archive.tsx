@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import Icon from '@/components/ui/icon';
+import VideoPlayer from '@/components/VideoPlayer';
 import {
   Accordion,
   AccordionContent,
@@ -74,6 +75,7 @@ const archiveShows: Show[] = [
 const Archive = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedEpisode, setSelectedEpisode] = useState<{ title: string; description: string } | null>(null);
 
   const categories = Array.from(new Set(archiveShows.map(show => show.category)));
 
@@ -155,6 +157,7 @@ const Archive = () => {
                         <div
                           key={episode.number}
                           className="flex items-center justify-between p-4 rounded-lg border hover:bg-muted/50 transition-colors cursor-pointer"
+                          onClick={() => setSelectedEpisode({ title: episode.title, description: episode.description })}
                         >
                           <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -185,6 +188,15 @@ const Archive = () => {
           <Icon name="Search" size={48} className="mx-auto text-muted-foreground mb-4" />
           <p className="text-muted-foreground">Передачи не найдены</p>
         </div>
+      )}
+
+      {selectedEpisode && (
+        <VideoPlayer
+          isOpen={!!selectedEpisode}
+          onClose={() => setSelectedEpisode(null)}
+          title={selectedEpisode.title}
+          description={selectedEpisode.description}
+        />
       )}
     </div>
   );
