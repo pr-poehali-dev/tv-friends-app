@@ -18,10 +18,10 @@ interface Day {
 
 const scheduleData: Day[] = [
   {
-    date: '27 октября',
+    date: '27 октября (Воскресенье)',
     programs: [
       { time: '06:00', title: 'Утренний эфир', description: 'Новости и актуальные темы дня', category: 'Новости' },
-      { time: '09:00', title: 'Вкусняшная гонка', description: 'Кулинарное шоу, сезон 31', category: 'Развлечения' },
+      { time: '09:00', title: 'Завтрак с Максимом', description: 'Премьера! Идеальные панкейки с ягодами и кленовым сиропом', category: 'Развлечения' },
       { time: '10:30', title: 'Travel Show: Поехали в город', description: 'Путешествие по городам России', category: 'Путешествия' },
       { time: '12:00', title: 'Большой футбол', description: 'Финал реалити-шоу', category: 'Спорт' },
       { time: '14:00', title: 'Дневные новости', description: 'Главные события', category: 'Новости' },
@@ -32,24 +32,24 @@ const scheduleData: Day[] = [
     ]
   },
   {
-    date: '28 октября',
+    date: '3 ноября (Воскресенье)',
     programs: [
       { time: '06:00', title: 'Утренний эфир', description: 'Новости и актуальные темы дня', category: 'Новости' },
-      { time: '09:00', title: 'Вкусняшная гонка', description: 'Кулинарное шоу, новый эпизод', category: 'Развлечения' },
+      { time: '09:00', title: 'Завтрак с Максимом', description: 'Французские круассаны и капучино. Готовим как в Париже', category: 'Развлечения' },
       { time: '10:30', title: 'Travel Show: Поехали в город', description: 'Путешествие по Европе', category: 'Путешествия' },
       { time: '12:00', title: 'Большой футбол', description: 'Полуфинал, 1 выпуск', category: 'Спорт' },
       { time: '14:00', title: 'Дневные новости', description: 'Главные события', category: 'Новости' },
-      { time: '15:00', title: 'Вкусняшная гонка', description: 'Кулинарное шоу, повтор', category: 'Развлечения' },
+      { time: '15:00', title: 'Вкусняшная гонка', description: 'Кулинарное шоу', category: 'Развлечения' },
       { time: '18:00', title: 'Вечерний эфир', description: 'Итоги дня', category: 'Новости' },
       { time: '20:00', title: 'Большой футбол', description: 'Полуфинал, 2 выпуск', category: 'Спорт' },
       { time: '22:00', title: 'Travel Show: Поехали в город', description: 'Россия, города Сибири', category: 'Путешествия' }
     ]
   },
   {
-    date: '29 октября',
+    date: '10 ноября (Воскресенье)',
     programs: [
       { time: '06:00', title: 'Утренний эфир', description: 'Новости и актуальные темы дня', category: 'Новости' },
-      { time: '09:00', title: 'Вкусняшная гонка', description: 'Кулинарное шоу', category: 'Развлечения' },
+      { time: '09:00', title: 'Завтрак с Максимом', description: 'Яйца Бенедикт с голландским соусом. Классика американского завтрака', category: 'Развлечения' },
       { time: '10:30', title: 'Travel Show: Поехали в город', description: 'Золотое кольцо России', category: 'Путешествия' },
       { time: '12:00', title: 'Большой футбол', description: 'Групповой этап', category: 'Спорт' },
       { time: '14:00', title: 'Дневные новости', description: 'Главные события', category: 'Новости' },
